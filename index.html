@@ -31,10 +31,38 @@
 		<header id="header">
 			<a href="index.html" class="logo">
 				Ayush Patel<br>
-				<span style="font-size: 0.7em; font-weight: 400;">Odoo Developer</span>
+				<span class="developer-title">Odoo Developer</span>
 			</a>
 		</header>
 
+		<style>
+			#header .logo {
+				font-size: 1.8rem;
+				/* Main name font size */
+				text-align: center;
+				display: block;
+			}
+
+			#header .logo span.developer-title {
+				display: block;
+				/* Forces "Odoo Developer" to be on a new line */
+				font-size: 1.2rem;
+				/* Default size for Odoo Developer */
+				font-weight: 400;
+			}
+
+			@media (max-width: 768px) {
+				#header .logo {
+					font-size: 1.6rem;
+					/* Adjust size for Ayush Patel on mobile */
+				}
+
+				#header .logo span.developer-title {
+					font-size: 1rem;
+					/* Smaller size for Odoo Developer on mobile */
+				}
+			}
+		</style>
 
 		<!-- Nav -->
 		<nav id="nav">
