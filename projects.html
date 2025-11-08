@@ -18,22 +18,51 @@
     <div id="wrapper" class="fade-in">
 
         <div id="intro">
-			<h1>This is<br />
-				Ayush Patel</h1>
-			<p>Odoo Developer | ERP Integration Specialist<br />
-				Passionate about building smart Odoo solutions and seamless business integrations.</p>
-			<ul class="actions">
-				<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-			</ul>
-		</div>
+            <h1>This is<br />
+                Ayush Patel</h1>
+            <p>Odoo Developer | ERP Integration Specialist<br />
+                Passionate about building smart Odoo solutions and seamless business integrations.</p>
+            <ul class="actions">
+                <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+            </ul>
+        </div>
 
         <!-- Header -->
         <header id="header">
             <a href="index.html" class="logo">
                 Ayush Patel<br>
-                <span style="font-size: 0.7em; font-weight: 400;">Odoo Developer</span>
+                <span class="developer-title">Odoo Developer</span>
             </a>
         </header>
+
+        <style>
+            #header .logo {
+                font-size: 1.8rem;
+                /* Main name font size */
+                text-align: center;
+                display: block;
+            }
+
+            #header .logo span.developer-title {
+                display: block;
+                /* Forces "Odoo Developer" to be on a new line */
+                font-size: 1.2rem;
+                /* Default size for Odoo Developer */
+                font-weight: 400;
+            }
+
+            @media (max-width: 768px) {
+                #header .logo {
+                    font-size: 1.6rem;
+                    /* Adjust size for Ayush Patel on mobile */
+                }
+
+                #header .logo span.developer-title {
+                    font-size: 1rem;
+                    /* Smaller size for Odoo Developer on mobile */
+                }
+            }
+        </style>
 
         <!-- Nav -->
         <nav id="nav">
@@ -137,10 +166,12 @@
                             </p>
                             <ul style="margin-left: 20px; line-height: 1.6; margin-bottom: 10px;">
                                 <li>🔗 <strong>Odoo Shopify Connector</strong> –
-                                    <a href="https://apps.odoo.com/apps/modules/18.0/shopify_cr" target="_blank">View on Odoo App Store</a>
+                                    <a href="https://apps.odoo.com/apps/modules/18.0/shopify_cr" target="_blank">View on
+                                        Odoo App Store</a>
                                 </li>
                                 <li>🔗 <strong>Odoo WooCommerce Connector</strong> –
-                                    <a href="https://apps.odoo.com/apps/modules/18.0/woocommerce_cr" target="_blank">View on Odoo App Store</a>
+                                    <a href="https://apps.odoo.com/apps/modules/18.0/woocommerce_cr"
+                                        target="_blank">View on Odoo App Store</a>
                                 </li>
                             </ul>
                             <p style="font-size: 0.9em; color: gray; margin-bottom: 10px;">
